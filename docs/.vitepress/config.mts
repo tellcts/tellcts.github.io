@@ -1,28 +1,47 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from 'vitepress';
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Awesome Project",
-  description: "A VitePress Site",
-  themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
+  title: 'Tzcan Blog',
+  description: '分享各种有趣内容，看看有你喜欢的吗😋😋😋',
+  lang: 'zh-CN',
+  srcDir: './src',
+  head: [['link', { rel: 'icon', href: '/favicon.png' }]],
+  lastUpdated: true,
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+  markdown: {
+    lineNumbers: true,
+    image: {
+      lazyLoading: true,
+    },
+  },
+
+  themeConfig: {
+    search: {
+      provider: 'local',
+    },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
-  }
-})
+      {
+        icon: 'github',
+        link: 'https://github.com/tellcts',
+      },
+    ],
+
+    footer: {
+      message:
+        '本站内容采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a> 许可协议。',
+      copyright: 'Copyright © 2026-present Tzcan',
+    },
+
+    nav: [
+      {
+        text: '首页',
+        link: '/',
+      },
+      {
+        text: 'Linux',
+        link: '/linux/',
+      },
+    ],
+  },
+});

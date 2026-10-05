@@ -1,0 +1,52 @@
+/* =========================================================
+   VitePress Custom Background
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   1. Background images
+   --------------------------------------------------------- */
+
+:root {
+  --custom-bg-light: url('/background-light.jpg');
+  --custom-bg-dark: url('/background-dark.jpg');
+}
+
+
+/* ---------------------------------------------------------
+   2. Global background
+   --------------------------------------------------------- */
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background-image: var(--custom-bg-light);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+/* ---------------------------------------------------------
+   3. Keep VitePress layout transparent
+   --------------------------------------------------------- */
+
+.VPApp,
+.VPContent,
+.VPDoc,
+.VPHome {
+  background: transparent !important;
+}
+
+
+/* ---------------------------------------------------------
+   4. Dark mode
+   --------------------------------------------------------- */
+
+.dark body {
+  background-image: var(--custom-bg-dark);
+}
+
