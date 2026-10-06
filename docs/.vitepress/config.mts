@@ -18,6 +18,22 @@ export default defineConfig({
   themeConfig: {
     search: {
       provider: 'local',
+      options: {
+        translations: {
+          button: { buttonText: '搜索', buttonAriaLabel: '搜索' },
+          modal: {
+            noResultsText: '无法找到相关结果',
+            resetButtonTitle: '清除查询条件',
+            backButtonTitle: '关闭搜索',
+            displayDetails: '显示详细列表',
+            footer: {
+              selectText: '选择',
+              navigateText: '切换',
+              closeText: '关闭',
+            },
+          },
+        },
+      },
     },
 
     socialLinks: [
@@ -33,14 +49,59 @@ export default defineConfig({
       copyright: 'Copyright © 2026-present Tzcan',
     },
 
+    sidebar: {
+      '/os/beautify/': [
+        {
+          text: '终端美化',
+          link: '/os/beautify/terminal/',
+          collapsed: false,
+          items: [
+            {
+              text: '终端显示字体',
+              link: '/os/beautify/terminal/#font',
+            },
+            {
+              text: '命令提示符',
+              link: '/os/beautify/terminal/#cmd',
+            },
+            {
+              text: '一键概览系统信息',
+              link: '/os/beautify/terminal/#fastfetch',
+            },
+          ],
+        },
+      ],
+    },
+
     nav: [
       {
         text: '首页',
         link: '/',
       },
       {
-        text: 'Linux',
-        link: '/linux/',
+        text: '个人项目',
+        link: '/projects/',
+      },
+      {
+        text: '操作系统OS',
+        items: [
+          {
+            text: 'Linux',
+            link: '/os/linux/',
+          },
+          {
+            text: 'Windows',
+            link: '/os/windows/',
+          },
+          {
+            text: '系统美化',
+            link: '/os/beautify/',
+          },
+        ],
+      },
+      {
+        text: '开源工具',
+        link: '/tools/',
       },
     ],
   },

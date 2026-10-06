@@ -11,7 +11,6 @@
   --custom-bg-dark: url('/background-dark.jpg');
 }
 
-
 /* ---------------------------------------------------------
    2. Global background
    --------------------------------------------------------- */
@@ -29,7 +28,6 @@ body {
   background-size: cover;
 }
 
-
 /* ---------------------------------------------------------
    3. Keep VitePress layout transparent
    --------------------------------------------------------- */
@@ -41,7 +39,6 @@ body {
   background: transparent !important;
 }
 
-
 /* ---------------------------------------------------------
    4. Dark mode
    --------------------------------------------------------- */
@@ -50,3 +47,112 @@ body {
   background-image: var(--custom-bg-dark);
 }
 
+/* ---------------------------------------------------------
+   5. Frosted-glass bars (navigation bar & footer)
+   --------------------------------------------------------- */
+
+:root {
+  --custom-glass-bg: rgba(255, 255, 255, 0.5);
+  --custom-glass-border: rgba(60, 60, 67, 0.16);
+}
+
+.dark {
+  --custom-glass-bg: rgba(27, 27, 31, 0.5);
+  --custom-glass-border: rgba(255, 255, 255, 0.12);
+}
+
+.VPNavBar .content-body {
+  background-color: transparent !important;
+}
+
+/* 底部原有的一条 divider-line 交给 border-bottom 实现，避免叠成两条 */
+.VPNavBar .divider,
+.VPNavBar .divider-line {
+  background-color: transparent !important;
+}
+
+.VPNavBar,
+.VPFooter {
+  background-color: var(--custom-glass-bg) !important;
+  backdrop-filter: saturate(180%) blur(24px);
+  -webkit-backdrop-filter: saturate(180%) blur(24px);
+}
+
+.VPNavBar {
+  border-bottom: 1px solid var(--custom-glass-border) !important;
+}
+
+.VPFooter {
+  border-top: 1px solid var(--custom-glass-border) !important;
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  :root {
+    --custom-glass-bg: rgba(255, 255, 255, 0.95);
+  }
+
+  .dark {
+    --custom-glass-bg: rgba(27, 27, 31, 0.95);
+  }
+}
+
+/* ---------------------------------------------------------
+   6. Frosted-glass home feature cards
+   --------------------------------------------------------- */
+
+.VPFeature {
+  background-color: var(--custom-glass-bg) !important;
+  backdrop-filter: saturate(180%) blur(24px);
+  -webkit-backdrop-filter: saturate(180%) blur(24px);
+  border-color: var(--custom-glass-border) !important;
+}
+
+.VPFeature.link:hover {
+  border-color: var(--vp-c-brand-1) !important;
+}
+
+/* ---------------------------------------------------------
+   7. Frosted-glass sidebar
+   --------------------------------------------------------- */
+
+.VPSidebar {
+  background-color: var(--custom-glass-bg) !important;
+  backdrop-filter: saturate(180%) blur(24px);
+  -webkit-backdrop-filter: saturate(180%) blur(24px);
+  border-right: 1px solid var(--custom-glass-border);
+}
+
+.VPSidebar .curtain {
+  background-color: transparent !important;
+}
+
+/* ---------------------------------------------------------
+   8. Sidebar text size
+   --------------------------------------------------------- */
+
+.VPSidebarItem .text {
+  font-size: 17px !important;
+}
+
+/* ---------------------------------------------------------
+   9. Frosted-glass prev/next pager
+   --------------------------------------------------------- */
+
+.pager-link {
+  background-color: var(--custom-glass-bg) !important;
+  backdrop-filter: saturate(180%) blur(24px);
+  -webkit-backdrop-filter: saturate(180%) blur(24px);
+  border-color: var(--custom-glass-border) !important;
+}
+
+.pager-link:hover {
+  border-color: var(--vp-c-brand-1) !important;
+}
+
+/* ---------------------------------------------------------
+   10. Hide the aside curtain
+   --------------------------------------------------------- */
+
+.aside-curtain {
+  display: none !important;
+}
