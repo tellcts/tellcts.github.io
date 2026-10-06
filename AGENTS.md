@@ -16,3 +16,12 @@
 # 注意事项
 - 你只需要帮我编写代码,不需要附带相关注释，不要管理git操作,
 - 不需要帮我执行任何的pnpm相关命令
+
+## 约定
+- 正文代码围栏统一用 `~~~`，避免和内嵌的 ``` 冲突
+- 截图放 `docs/src/assets/images/`，从 `tools/` 里引用写 `../assets/images/<名字>.png`
+- 提示块用 `> [!TIP]` / `> [!IMPORTANT]` / `> [!WARNING]`
+- 平台差异写成 `- **平台**：` 开头的列表项
+- 中文与行内代码、英文之间不留空格
+- 需要加锚点时写 ASCII 的 `{#ascii-id}`，中文锚点无法高亮（`shared.js:30` 比对 `location.hash` 时未解码）
+- 新增工具时同步在 `themeConfig.sidebar['/tools/']` 追加 `{ text: '<工具名>', link: '/tools/<文件名>' }`

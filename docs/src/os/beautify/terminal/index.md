@@ -12,7 +12,8 @@ layout: doc
 
 
 ## 命令提示符 {#cmd}
-- 这里推荐使用[starship](https://starship.rs/zh-CN/)，我个人觉得比较好用,样式也比较好看。
+- 这里推荐使用[starship](https://starship.rs/zh-CN/)，我个人觉得比较好用,样式也比较好看。效果如图：
+![alt text](../../../assets/images/cmd.png)
 - `Windows`，`Linux`，`MacOS`平台都支持，安装方式详见[starship官网](https://starship.rs/zh-CN)。
 - 如果你是一名Rust开发者，可直接通过以下命令从源码安装`starship`：
 ~~~bash
@@ -58,8 +59,7 @@ min_time = 2000
 format = '⏳ [$duration]($style)'
 ~~~
 
-- 效果如图：
-![alt text](../../../assets/images/cmd.png)
+
 
 ## 一键概览系统信息 {#fastfetch}
 - 使用`fastfetch`一键获取系统信息，效果如图：[一键直达`fastfetch`官网](https://fastfetch.dev/)

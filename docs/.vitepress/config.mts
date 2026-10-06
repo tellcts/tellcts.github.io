@@ -36,6 +36,10 @@ export default defineConfig({
       },
     },
 
+    lastUpdated: {
+      text: '最后更新于',
+    },
+
     socialLinks: [
       {
         icon: 'github',
@@ -69,6 +73,22 @@ export default defineConfig({
               link: '/os/beautify/terminal/#fastfetch',
             },
           ],
+        },
+      ],
+      '/tools/': [
+        {
+          text: '终端编辑器Helix',
+          link: '/tools/helix',
+        },
+        {
+          text: 'Python构建工具UV',
+          link: '/tools/uv',
+        },
+      ],
+      '/projects/': [
+        {
+          text: '文件完整性监控FileMonitor',
+          link: '/projects/file-monitor',
         },
       ],
     },

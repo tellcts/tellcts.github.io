@@ -13,9 +13,9 @@ hero:
     alt: VitePress
 
 
-features:
-  - title: Linux
-    details: 常用服务配置、系统美化等
-  - title: 常用开发工具指南
-    details: Rust、Docker 等
+# features:
+#   - title: Linux
+#     details: 常用服务配置、系统美化等
+#   - title: 常用开发工具指南
+#     details: Rust、Docker 等
 ---
