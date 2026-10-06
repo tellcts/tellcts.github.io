@@ -91,6 +91,23 @@ export default defineConfig({
           link: '/projects/file-monitor',
         },
       ],
+      '/notes/info-sec/': [
+        {
+          text: '信息安全工程师',
+          link: '/notes/info-sec/',
+          collapsed: false,
+          items: [
+            {
+              text: '安全基础知识',
+              link: '/notes/info-sec/basic',
+            },
+            {
+              text: '案例知识总结',
+              link: '/notes/info-sec/advanced',
+            },
+          ],
+        },
+      ],
     },
 
     nav: [
@@ -101,6 +118,15 @@ export default defineConfig({
       {
         text: '个人项目',
         link: '/projects/',
+      },
+      {
+        text: '笔记',
+        items: [
+          {
+            text: '信息安全工程师',
+            link: '/notes/info-sec/',
+          },
+        ],
       },
       {
         text: '操作系统OS',
