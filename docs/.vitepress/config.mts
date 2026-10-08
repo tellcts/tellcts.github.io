@@ -112,15 +112,15 @@ export default defineConfig({
 
     nav: [
       {
-        text: '首页',
+        text: '🌐首页',
         link: '/',
       },
       {
-        text: '个人项目',
+        text: '🌟个人项目',
         link: '/projects/',
       },
       {
-        text: '笔记',
+        text: '✏️笔记',
         items: [
           {
             text: '信息安全工程师',
@@ -129,7 +129,7 @@ export default defineConfig({
         ],
       },
       {
-        text: '操作系统OS',
+        text: '💻操作系统OS',
         items: [
           {
             text: 'Linux',
@@ -146,7 +146,7 @@ export default defineConfig({
         ],
       },
       {
-        text: '开源工具',
+        text: '🔥开源工具推荐',
         link: '/tools/',
       },
     ],
