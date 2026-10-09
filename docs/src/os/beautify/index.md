@@ -1,6 +1,7 @@
 ---
 title: 系统美化
 layout: doc
+aside: false
 ---
 
 # 系统美化

@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress';
 
 export default defineConfig({
   title: 'Tzcan Blog',
+  titleTemplate: ':title - Tzcan Blog',
   description: '分享各种有趣内容，看看有你喜欢的吗😋😋😋',
   lang: 'zh-CN',
   srcDir: './src',

@@ -1,6 +1,7 @@
 ---
 title: 开源工具
 layout: doc
+aside: false
 ---
 
 # 开源工具
