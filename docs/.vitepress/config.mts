@@ -8,6 +8,11 @@ export default defineConfig({
   head: [['link', { rel: 'icon', href: '/favicon.png' }]],
   lastUpdated: true,
 
+  sitemap: {
+    hostname: 'https://tellcts.github.io',
+    lastmodDateOnly: false,
+  },
+
   markdown: {
     lineNumbers: true,
     image: {
@@ -16,6 +21,10 @@ export default defineConfig({
   },
 
   themeConfig: {
+    editLink: {
+      pattern: 'https://github.com/tellcts/tellcts.github.io/edit/main/docs/src/:path',
+      text: '在 GitHub 上编辑此页',
+    },
     search: {
       provider: 'local',
       options: {
