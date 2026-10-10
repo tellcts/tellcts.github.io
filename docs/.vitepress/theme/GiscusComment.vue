@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import Giscus from '@giscus/vue';
-import { useData } from 'vitepress';
+import { useData, useRoute } from 'vitepress';
 
 const { isDark } = useData();
+const route = useRoute();
 
 // 替换为你从 giscus.app 获取的真实配置
 const repo = 'tellcts/tellcts.github.io';
@@ -14,7 +15,7 @@ const categoryId = 'DIC_kwDOU8Jljc4DHeI-';
 <template>
   <div class="giscus-container">
     <Giscus
-      :key="isDark ? 'dark' : 'light'"
+      :key="`${route.path}-${isDark ? 'dark' : 'light'}`"
       :repo="repo"
       :repo-id="repoId"
       :category="category"
