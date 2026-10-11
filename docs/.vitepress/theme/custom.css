@@ -156,3 +156,30 @@ body {
 .aside-curtain {
   display: none !important;
 }
+
+/* ---------------------------------------------------------
+   11. Animation for Giscus comment section
+   --------------------------------------------------------- */
+
+.giscus-container {
+  animation: fade .5s ease;
+}
+
+@keyframes fade {
+  from {
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to {
+    opacity:1;
+    transform:none;
+  }
+}
+
+/* ---------------------------------------------------------
+   12. Compact footer
+   --------------------------------------------------------- */
+
+.VPFooter {
+  padding: 20px 24px !important;
+}
