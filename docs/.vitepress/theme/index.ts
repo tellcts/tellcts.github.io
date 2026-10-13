@@ -1,6 +1,7 @@
 import { h } from 'vue';
 import DefaultTheme from 'vitepress/theme';
 import GiscusComment from './GiscusComment.vue';
+import '@fortawesome/fontawesome-free/css/all.css';
 import './custom.css';
 
 export default {

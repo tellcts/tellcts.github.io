@@ -87,23 +87,23 @@ export default defineConfig({
       ],
       '/tools/': [
         {
-          text: '终端编辑器Helix',
+          text: '<i class="fa-solid fa-terminal"></i>终端编辑器Helix',
           link: '/tools/helix',
         },
         {
-          text: 'Python构建工具UV',
+          text: '<i class="fa-solid fa-code"></i>Python构建工具UV',
           link: '/tools/uv',
         },
       ],
       '/projects/': [
         {
-          text: '文件完整性监控FileMonitor',
+          text: '<i class="fa-solid fa-file-alt"></i>文件完整性监控FileMonitor',
           link: '/projects/file-monitor',
         },
       ],
       '/notes/info-sec/': [
         {
-          text: '信息安全工程师',
+          text: '<i class="fa-solid fa-shield-alt"></i>信息安全工程师',
           link: '/notes/info-sec/',
           collapsed: false,
           items: [
@@ -122,15 +122,15 @@ export default defineConfig({
 
     nav: [
       {
-        text: '🌐首页',
+        text: '<i class="fa-solid fa-house" style="color: rgb(20, 126, 211);"></i>首页',
         link: '/',
       },
       {
-        text: '🌟个人项目',
+        text: '<i class="fa-solid fa-star fa-spin" style="color: rgb(255, 212, 59);"></i>个人项目',
         link: '/projects/',
       },
       {
-        text: '✏️笔记',
+        text: '<i class="fa-solid fa-edit"></i>笔记',
         items: [
           {
             text: '信息安全工程师',
@@ -139,24 +139,24 @@ export default defineConfig({
         ],
       },
       {
-        text: '💻操作系统OS',
+        text: '<i class="fa-solid fa-laptop"></i>操作系统OS',
         items: [
           {
-            text: 'Linux',
+            text: '<i class="fa-brands fa-linux" style="color: rgb(0, 0, 0);"></i>Linux',
             link: '/os/linux/',
           },
           {
-            text: 'Windows',
+            text: '<i class="fa-brands fa-windows" style="color: rgb(116, 192, 252);"></i>Windows',
             link: '/os/windows/',
           },
           {
-            text: '系统美化',
+            text: '<i class="fa-solid fa-paint-brush"></i>系统美化',
             link: '/os/beautify/',
           },
         ],
       },
       {
-        text: '🔥开源工具推荐',
+        text: '<i class="fa-solid fa-fire"></i>开源工具推荐',
         link: '/tools/',
       },
     ],
