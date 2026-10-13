@@ -100,6 +100,10 @@ export default defineConfig({
           text: '<i class="fa-solid fa-file-alt"></i>文件完整性监控FileMonitor',
           link: '/projects/file-monitor',
         },
+        {
+          text: '<i class="fa-solid fa-id-card"></i>模块化简历模板resumes-CV',
+          link: '/projects/resumes-cv',
+        },
       ],
       '/notes/info-sec/': [
         {
