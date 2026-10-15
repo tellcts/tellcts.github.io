@@ -134,6 +134,10 @@ body {
   font-size: 17px !important;
 }
 
+.VPSidebarItem.level-1 .text {
+  font-size: 15px !important;
+}
+
 /* ---------------------------------------------------------
    9. Frosted-glass prev/next pager
    --------------------------------------------------------- */
@@ -189,4 +193,13 @@ body {
 .VPSidebarItem i[class*='fa-'],
 .vp-doc i[class*='fa-'] {
   margin-right: 0.3em;
+}
+
+/* ---------------------------------------------------------
+   13. Table first column width
+   --------------------------------------------------------- */
+
+.vp-doc table th:first-child,
+.vp-doc table td:first-child {
+  min-width: 7.5em;
 }

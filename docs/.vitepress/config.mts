@@ -55,6 +55,11 @@ export default defineConfig({
         icon: 'github',
         link: 'https://github.com/tellcts',
       },
+      {
+        icon: 'gmail',
+        link: 'mailto:tzcanme@gmail.com',
+        ariaLabel: '邮箱',
+      },
     ],
 
     footer: {
@@ -64,50 +69,55 @@ export default defineConfig({
     },
 
     sidebar: {
-      '/os/beautify/': [
+      '/tools/': [
         {
-          text: '终端美化',
-          link: '/os/beautify/terminal/',
+          text: '<i class="fa-brands fa-python" style="color: rgb(55, 118, 171);"></i>Python构建工具UV',
+          link: '/tools/uv/',
           collapsed: false,
           items: [
             {
-              text: '终端显示字体',
-              link: '/os/beautify/terminal/#font',
+              text: 'UV简介与安装',
+              link: '/tools/uv/intro',
             },
             {
-              text: '命令提示符',
-              link: '/os/beautify/terminal/#cmd',
+              text: '常用命令与配置',
+              link: '/tools/uv/commands',
             },
             {
-              text: '一键概览系统信息',
-              link: '/os/beautify/terminal/#fastfetch',
+              text: '代码检查与格式化工具Ruff',
+              link: '/tools/uv/ruff',
             },
           ],
         },
       ],
-      '/tools/': [
-        {
-          text: '<i class="fa-solid fa-terminal"></i>终端编辑器Helix',
-          link: '/tools/helix',
-        },
-        {
-          text: '<i class="fa-solid fa-code"></i>Python构建工具UV',
-          link: '/tools/uv',
-        },
-      ],
       '/projects/': [
-        {
-          text: '<i class="fa-solid fa-file-alt"></i>文件完整性监控FileMonitor',
-          link: '/projects/file-monitor',
-        },
         {
           text: '<i class="fa-solid fa-id-card"></i>模块化简历模板resumes-CV',
           link: '/projects/resumes-cv',
+          collapsed: false,
+          items: [
+            {
+              text: '效果展示',
+              link: '/projects/resumes-cv#preview',
+            },
+            {
+              text: '为什么值得一试',
+              link: '/projects/resumes-cv#why',
+            },
+            {
+              text: '快速上手',
+              link: '/projects/resumes-cv#quickstart',
+            },
+            {
+              text: '深入了解',
+              link: '/projects/resumes-cv#details',
+            },
+          ],
         },
       ],
-      '/notes/info-sec/': [
+      '/notes/': [
         {
-          text: '<i class="fa-solid fa-shield-alt"></i>信息安全工程师',
+          text: '软考·信息安全工程师',
           link: '/notes/info-sec/',
           collapsed: false,
           items: [
@@ -134,33 +144,11 @@ export default defineConfig({
         link: '/projects/',
       },
       {
-        text: '<i class="fa-solid fa-edit"></i>笔记',
-        items: [
-          {
-            text: '信息安全工程师',
-            link: '/notes/info-sec/',
-          },
-        ],
+        text: '<i class="fa-solid fa-marker" style="color: rgb(0, 184, 148);"></i>笔记',
+        link: '/notes/',
       },
       {
-        text: '<i class="fa-solid fa-laptop"></i>操作系统OS',
-        items: [
-          {
-            text: '<i class="fa-brands fa-linux" style="color: rgb(0, 0, 0);"></i>Linux',
-            link: '/os/linux/',
-          },
-          {
-            text: '<i class="fa-brands fa-windows" style="color: rgb(116, 192, 252);"></i>Windows',
-            link: '/os/windows/',
-          },
-          {
-            text: '<i class="fa-solid fa-paint-brush"></i>系统美化',
-            link: '/os/beautify/',
-          },
-        ],
-      },
-      {
-        text: '<i class="fa-solid fa-fire"></i>开源工具推荐',
+        text: '<i class="fa-solid fa-fire" style="color: rgb(255, 108, 60);"></i>开源工具推荐',
         link: '/tools/',
       },
     ],
