@@ -1,6 +1,7 @@
 ---
 title: 模块化LaTeX简历模板resumes-CV
 layout: doc
+aside: false
 ---
 
 # 模块化LaTeX简历模板resumes-CV

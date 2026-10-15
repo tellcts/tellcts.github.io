@@ -1,6 +1,7 @@
 ---
 title: UV简介与安装
 titleTemplate: :title - Python构建工具UV
+aside: false
 ---
 
 # UV简介与安装

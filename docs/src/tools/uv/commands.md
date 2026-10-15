@@ -1,6 +1,7 @@
 ---
 title: 常用命令与配置
 titleTemplate: :title - Python构建工具UV
+aside: false
 ---
 
 # 常用命令与配置
