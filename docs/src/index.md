@@ -5,8 +5,8 @@ layout: home
 hero:
   name: 欢迎来到我的世界！
   text: |-
-    Keep learning,
-    Keep improving.
+    Keep Learning,
+    Keep Improving.
   tagline: 🧰 开源工具实践、📒 学习笔记、📦 个人项目，能直接拿来用，也能回头查。
   image:
     src: /favicon.png
