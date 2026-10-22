@@ -92,10 +92,18 @@ export default defineConfig({
       ],
       '/projects/': [
         {
-          text: '<i class="fa-solid fa-id-card"></i>模块化简历模板resumes-CV',
+          text: '<i class="fa-solid fa-id-card"></i>模块化简历模板',
           link: '/projects/resumes-cv',
           collapsed: false,
           items: [
+            {
+              text: 'resumes-CV是什么',
+              link: '/projects/resumes-cv#what-is-resumes-cv',
+            },
+            {
+              text: '怎么使用',
+              link: '/projects/resumes-cv#usage',
+            },
             {
               text: '效果展示',
               link: '/projects/resumes-cv#preview',
@@ -111,6 +119,65 @@ export default defineConfig({
             {
               text: '深入了解',
               link: '/projects/resumes-cv#details',
+            },
+          ],
+        },
+        {
+          text: '<i class="fa-brands fa-docker"></i>Docker镜像加速',
+          link: '/projects/docker-images-sync',
+          collapsed: false,
+          items: [
+            {
+              text: 'ghcr.io是什么',
+              link: '/projects/docker-images-sync#what-is-ghcr',
+            },
+            {
+              text: '两种使用方式',
+              link: '/projects/docker-images-sync#usage-modes',
+            },
+            {
+              text: '为什么可以免费加速',
+              link: '/projects/docker-images-sync#free',
+            },
+            {
+              text: '项目特性',
+              link: '/projects/docker-images-sync#features',
+            },
+            {
+              text: '工作原理',
+              link: '/projects/docker-images-sync#how-it-works',
+            },
+            {
+              text: '快速上手',
+              link: '/projects/docker-images-sync#quickstart',
+            },
+            {
+              text: '同步规则',
+              link: '/projects/docker-images-sync#sync-rules',
+            },
+            {
+              text: '使用同步镜像',
+              link: '/projects/docker-images-sync#use-images',
+            },
+            {
+              text: '默认镜像清单',
+              link: '/projects/docker-images-sync#catalog',
+            },
+            {
+              text: '本地运行',
+              link: '/projects/docker-images-sync#local-run',
+            },
+            {
+              text: '注意事项',
+              link: '/projects/docker-images-sync#limits',
+            },
+            {
+              text: '许可与合规',
+              link: '/projects/docker-images-sync#license',
+            },
+            {
+              text: '项目文档',
+              link: '/projects/docker-images-sync#details',
             },
           ],
         },

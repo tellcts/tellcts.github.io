@@ -4,11 +4,15 @@ layout: doc
 aside: false
 ---
 
-# 模块化LaTeX简历模板resumes-CV
+<h1 align="center">模块化LaTeX简历模板resumes-CV</h1>
+
+## 📄 resumes-CV是什么 {#what-is-resumes-cv}
 
 把简历当代码写：**内容归内容，排版归排版**。
 
 resumes-CV 是我用 LaTeX 写的一个模块化简历模板库。起因挺朴素的：用在线简历网站改一个词就可能重排一次版面，Word 里拖来拖去、换个设备打开又是另一副样子。把简历当代码写之后，加一段经历不会把整页挤乱，想换配色也只改`.sty`里的一个变量。
+
+## 🧩 怎么使用 {#usage}
 
 用起来只有两条边界：
 
@@ -17,7 +21,7 @@ resumes-CV 是我用 LaTeX 写的一个模块化简历模板库。起因挺朴�
 
 一句话：**会填空，就能改简历**。
 
-仓库地址：[**github.com/tellcts/resumes-CV**](https://github.com/tellcts/resumes-CV)，采用 PolyForm Noncommercial 1.0.0 许可，个人求职、学习等非商业用途免费。
+仓库地址：[**github.com/tellcts/resumes-CV**](https://github.com/tellcts/resumes-CV)，采用 [**PolyForm Noncommercial 1.0.0 许可**](https://creativecommons.org/licenses/by-nc-sa/4.0/)，个人求职、学习等非商业用途免费。
 
 ## 📸 效果展示 {#preview}
 

@@ -25,7 +25,7 @@ hero:
 features:
   - icon: '<i class="fa-solid fa-star fa-spin" style="color: rgb(255, 212, 59);"></i>'
     title: 个人项目
-    details: 自己写的开源项目。resumes-CV 用 LaTeX 把简历的内容与版式彻底分离，会填键值对就能改，数据全程不出本地。
+    details: 自己写的开源项目。resumes-CV 用 LaTeX 把简历的内容与版式彻底分离；docker-images-sync 借助 GitHub Actions 和公开 GHCR 免费同步常用 Docker 镜像。
     link: /projects/
     linkText: 查看项目
   - icon: '<i class="fa-solid fa-fire" style="color: rgb(255, 108, 60);"></i>'
