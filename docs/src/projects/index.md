@@ -13,3 +13,4 @@ aside: false
 ## 📦 项目列表
 
 - 📄 [**模块化LaTeX简历模板resumes-CV**](/projects/resumes-cv)：用 LaTeX 模块化构建简历，内容与版式彻底分离，会填键值对就能改，数据不出本地。
+- 🐳 [**用GitHub镜像服务免费加速Docker镜像拉取**](/projects/docker-images-sync)：把常用Docker镜像同步到公开的GHCR仓库，不买服务器、不部署代理，换成`ghcr.io`地址就能拉取。
