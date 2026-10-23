@@ -40,30 +40,28 @@ resumes-CV 是我用 LaTeX 写的一个模块化简历模板库。起因挺朴�
 
 ## 🚀 快速上手 {#quickstart}
 
-### 🧰 环境准备
+不用安装TeX Live，也不用克隆仓库。下载打包好的模板后，直接导入Overleaf就能在线编辑和编译。
 
-只需要 TeX Live 2026 自带的 XeLaTeX 与 latexmk，装完用`xelatex --version`和`latexmk --version`各确认一次。
+### 📦 下载模板
 
-### ⚡ 编译出 PDF
+打开[resumes-CV最新Release](https://github.com/tellcts/resumes-CV/releases/latest)，下载名为`Resume.Template.tzcan-*.zip`的模板压缩包。
 
-~~~bash
-git clone https://github.com/tellcts/resumes-CV.git
-cd resumes-CV/src/templates/tzcan
-latexmk main.tex        # 产物：build/main.pdf
-~~~
+### 🌐 导入 Overleaf
 
-不想在本机装几个 GB 的 TeX Live 也没关系，官方文档里还给了 Overleaf 在线编译和 Docker 容器编译两条路。
+1. 登录[Overleaf](https://www.overleaf.com/)，选择`New Project` → `Upload Project`。
+2. 上传刚下载的ZIP压缩包。
+3. 打开项目中的`main.tex`，修改姓名、教育背景、项目经历等内容。
+4. 点击`Recompile`生成 PDF。
 
-> [!WARNING]
-> 必须在`src/templates/tzcan/`目录下编译 ——`main.tex`里的文档类走的是相对路径，在仓库根目录编译会直接报找不到文档类。
+> [!TIP]
+> Overleaf默认使用pdfLaTeX，无法正常编译时，点击左下角的齿轮设置按钮，在编译器选项界面将编译器切换为XeLaTeX，然后重新编译。
+
+> [!IMPORTANT]
+> 只需要编辑`main.tex`里的键值对，版式文件无需改动。也不要把ZIP里的文件拆散后单独上传，否则可能找不到模板依赖。
 
 ## 📚 深入了解 {#details}
 
 ### 📖 项目文档
 
 - [README](https://github.com/tellcts/resumes-CV#-相比之下有什么优势)：项目总览，以及和简历网站、Word 模板的逐项对比。
-- [tzcan 模板 USAGE.md](https://github.com/tellcts/resumes-CV/blob/main/src/templates/tzcan/USAGE.md)：从装环境一路讲到每个组件的每个字段说明。
-
-### 📦 模板下载
-
-- [Releases](https://github.com/tellcts/resumes-CV/releases)：打包好的`Resume.Template.tzcan-*.zip`，Overleaf 用户下载后直接上传即可。
+- [tzcan 模板 USAGE.md](https://github.com/tellcts/resumes-CV/blob/main/src/templates/tzcan/USAGE.md)：从导入Overleaf、修改内容到每个组件的字段说明。
