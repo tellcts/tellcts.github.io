@@ -13,6 +13,7 @@ aside: false
 ## 🧰 工具列表 {#tool-list}
 
 - 🐍 [**Python构建工具UV**](/tools/uv/)：用 Rust 写的 Python 包与项目管理器，一个二进制替掉`pip`、`virtualenv`、`pipx`、`poetry`；同章节还收了 Astral 的 Ruff，负责代码检查与格式化。
+- 🐙 [**GitHub CLI**](/tools/github-cli)：GitHub官方命令行工具，在终端完成仓库管理、Pull Request、Actions状态查询与Release下载。
 
 ## 🗓️ 后续计划 {#roadmap}
 
