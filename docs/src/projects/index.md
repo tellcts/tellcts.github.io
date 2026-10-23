@@ -4,13 +4,13 @@ layout: doc
 aside: false
 ---
 
-# 个人项目
+# 个人项目 {#projects}
 
 这里放我自己写的开源项目，大多是日常折腾里「顺手做出来、发现真能用」的东西，能开源的就开源出来。
 
 每个项目的页面不写流水账，只讲清楚它解决什么问题、相比现成方案强在哪、怎么跑起来，需要的细节都放在仓库里。
 
-## 📦 项目列表
+## 📦 项目列表 {#project-list}
 
 - 📄 [**模块化LaTeX简历模板resumes-CV**](/projects/resumes-cv)：用 LaTeX 模块化构建简历，内容与版式彻底分离，会填键值对就能改，数据不出本地。
 - 🐳 [**用GitHub镜像服务免费加速Docker镜像拉取**](/projects/docker-images-sync)：把常用Docker镜像同步到公开的GHCR仓库，不买服务器、不部署代理，换成`ghcr.io`地址就能拉取。

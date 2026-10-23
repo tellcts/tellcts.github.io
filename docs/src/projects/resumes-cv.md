@@ -42,11 +42,11 @@ resumes-CV 是我用 LaTeX 写的一个模块化简历模板库。起因挺朴�
 
 不用安装TeX Live，也不用克隆仓库。下载打包好的模板后，直接导入Overleaf就能在线编辑和编译。
 
-### 📦 下载模板
+### 📦 下载模板 {#download-template}
 
 打开[resumes-CV最新Release](https://github.com/tellcts/resumes-CV/releases/latest)，下载名为`Resume.Template.tzcan-*.zip`的模板压缩包。
 
-### 🌐 导入 Overleaf
+### 🌐 导入 Overleaf {#import-overleaf}
 
 1. 登录[Overleaf](https://www.overleaf.com/)，选择`New Project` → `Upload Project`。
 2. 上传刚下载的ZIP压缩包。
@@ -61,7 +61,7 @@ resumes-CV 是我用 LaTeX 写的一个模块化简历模板库。起因挺朴�
 
 ## 📚 深入了解 {#details}
 
-### 📖 项目文档
+### 📖 项目文档 {#project-docs}
 
 - [README](https://github.com/tellcts/resumes-CV#-相比之下有什么优势)：项目总览，以及和简历网站、Word 模板的逐项对比。
 - [tzcan 模板 USAGE.md](https://github.com/tellcts/resumes-CV/blob/main/src/templates/tzcan/USAGE.md)：从导入Overleaf、修改内容到每个组件的字段说明。

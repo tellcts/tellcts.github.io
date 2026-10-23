@@ -2,9 +2,9 @@
 title: 案例知识总结
 titleTemplate: :title - 信息安全工程师
 ---
-# 一、iptables防火墙
+# 一、iptables防火墙 {#iptables-firewall}
 
-## 1.1 iptables简介
+## 1.1 iptables简介 {#section-1-1}
 1. **iptables**是Linux系统自带的防火墙，相较于它现在更为先进的版本是**nftables**。
 2. 大致来说iptables也就是**四表五链**：
 :::tip 四表
@@ -28,7 +28,7 @@ titleTemplate: :title - 信息安全工程师
 :::
 
 
-## 1.2 iptables语法
+## 1.2 iptables语法 {#section-1-2}
 1. 基本语法结构：未指定表名时默认为`filter`。
 ~~~bash
 iptables [-t 表名] 操作选项 [链名] [匹配条件] [-j 动作]
@@ -198,9 +198,9 @@ iptables -A INPUT -p tcp --dport 23 -j DROP
 <br>
 <br>
 
-# 二、Wireshark过滤器语法
+# 二、Wireshark过滤器语法 {#wireshark-filters}
 
-## 2.1 捕获过滤器语法（BPF语法）
+## 2.1 捕获过滤器语法（BPF语法） {#section-2-1}
 |    类别     |            关键字            |                            说明                            |
 | :---------: | :--------------------------: | :--------------------------------------------------------: |
 |  协议筛选   |            **ip**            |                  仅捕获 IPv4 协议的数据包                  |
@@ -228,7 +228,7 @@ iptables -A INPUT -p tcp --dport 23 -j DROP
 |             |           **（）**           |                 改变运算优先级（组合条件）                 |
 
 
-## 2.2 显示过滤器语法
+## 2.2 显示过滤器语法 {#section-2-2}
 |   协议   |                  字段                  |                  说明                   |                    示例                    |
 | :------: | :------------------------------------: | :-------------------------------------: | :----------------------------------------: |
 |  以太网  |              **eth.src**               |            以太网源 MAC 地址            |       `eth.src == 00:1a:2b:3c:4d:5e`       |

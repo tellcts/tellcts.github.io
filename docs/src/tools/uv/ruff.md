@@ -4,11 +4,11 @@ titleTemplate: :title - Python构建工具UV
 aside: false
 ---
 
-# 代码检查与格式化工具Ruff
+# 代码检查与格式化工具Ruff {#ruff}
 
 一次调用跑完 900 多条规则，官方口径比 Flake8 快一到两个数量级。
 
-## 🤔 Ruff是什么
+## 🤔 Ruff是什么 {#what-is-ruff}
 
 Astral（[uv](/tools/uv/)的同一团队）用 Rust 写的 Python 代码检查与格式化工具，一个二进制替掉过去要装一串的东西：Flake8 及其几十个插件、Black、isort、pydocstyle、pyupgrade、autoflake。
 
@@ -17,7 +17,7 @@ Astral（[uv](/tools/uv/)的同一团队）用 Rust 写的 Python 代码检查�
 > [!IMPORTANT]
 > Ruff 不是类型检查器。把整数传给了期望字符串的函数这类问题它看不出来，那是`mypy`、`pyright`的活。它接手的是风格与常见错误检查，和类型检查器互补。
 
-## ⚡ 性能如何
+## ⚡ 性能如何 {#performance}
 
 官方口径是比现有 linter（如 Flake8）和 formatter（如 Black）快 10-100 倍，基准场景是把 CPython 代码库从头检查一遍。社区实测的数字更大：
 
@@ -34,7 +34,7 @@ Astral（[uv](/tools/uv/)的同一团队）用 Rust 写的 Python 代码检查�
 | 自动修复 | 多数工具只报不改                                 | `--fix`直接改，不安全修复要额外加`--unsafe-fixes`                             |
 | 兼容性   | —                                                | 与 Black 格式基本一致；替换 Flake8 需要不带插件或插件很少，且是 Python 3 代码 |
 
-## 🚀 安装与更新
+## 🚀 安装与更新 {#installation-and-update}
 
 ~~~bash
 # 安装 Ruff
@@ -47,7 +47,7 @@ uv tool update ruff
 > [!TIP]
 > Ruff 通过`uv tool`安装后是全局可用的独立命令，用法见[官方文档](https://docs.astral.sh/ruff/)。
 
-## ⌨️ 常用命令
+## ⌨️ 常用命令 {#common-commands}
 
 ~~~bash
 # 检查当前目录及子目录

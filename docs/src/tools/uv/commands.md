@@ -4,9 +4,9 @@ titleTemplate: :title - Python构建工具UV
 aside: false
 ---
 
-# 常用命令与配置
+# 常用命令与配置 {#uv-commands}
 
-## 🐍 Python版本管理
+## 🐍 Python版本管理 {#python-version-management}
 
 ~~~bash
 # 安装、卸载Python版本
@@ -23,7 +23,7 @@ uv python pin <version>
 uv python find
 ~~~
 
-## 📦 项目管理
+## 📦 项目管理 {#project-management}
 
 ~~~bash
 # 初始化项目，生成 pyproject.toml
@@ -49,7 +49,7 @@ uv tree
 > [!TIP]
 > `uv run`会在环境缺失或与锁文件不一致时自动补齐，日常不必反复`activate`。
 
-## 🛠️ 运行命令行工具
+## 🛠️ 运行命令行工具 {#command-line-tools}
 
 ~~~bash
 # 安装命令行工具
@@ -59,7 +59,7 @@ uv tool install <工具名>
 uvx <工具名>
 ~~~
 
-## ⚡ 开启UV和UVX的Shell Tab自动补全功能
+## ⚡ 开启UV和UVX的Shell Tab自动补全功能 {#shell-completion}
 
 ~~~bash
 # Bash
@@ -71,7 +71,7 @@ echo 'eval "$(uv generate-shell-completion zsh)"' >> ~/.zshrc
 echo 'eval "$(uvx --generate-shell-completion zsh)"' >> ~/.zshrc
 ~~~
 
-## 🌏 镜像配置
+## 🌏 镜像配置 {#mirror-configuration}
 
 配置文件：
 
