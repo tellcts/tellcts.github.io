@@ -9,8 +9,8 @@ hero:
     Keep Improving.
   tagline: 分享好用的开源工具集🧰，记录学习中的思考与答案📝，顺手做点真正能用的项目📦。
   image:
-    src: /favicon.png
-    alt: VitePress
+    src: /hero-knowledge-peak.svg
+    alt: 书页化作雪峰的知识插画
   actions:
     - theme: brand
       text: 打造简历

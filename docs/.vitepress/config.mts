@@ -89,6 +89,45 @@ export default defineConfig({
             },
           ],
         },
+        {
+          text: '<i class="fa-brands fa-github"></i>GitHub CLI',
+          link: '/tools/github-cli',
+          collapsed: false,
+          items: [
+            {
+              text: 'GitHub CLI是什么',
+              link: '/tools/github-cli#what-is-gh',
+            },
+            {
+              text: '安装与登录',
+              link: '/tools/github-cli#installation',
+            },
+            {
+              text: '日常用法',
+              link: '/tools/github-cli#daily-usage',
+            },
+            {
+              text: '仓库管理',
+              link: '/tools/github-cli#repository-management',
+            },
+            {
+              text: 'Pull Request',
+              link: '/tools/github-cli#pull-request',
+            },
+            {
+              text: 'Release查看与下载',
+              link: '/tools/github-cli#release-download',
+            },
+            {
+              text: '结构化输出与自动化',
+              link: '/tools/github-cli#automation',
+            },
+            {
+              text: '常用命令速查',
+              link: '/tools/github-cli#command-reference',
+            },
+          ],
+        },
       ],
       '/projects/': [
         {
