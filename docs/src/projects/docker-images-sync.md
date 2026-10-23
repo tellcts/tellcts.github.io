@@ -23,7 +23,7 @@ aside: false
 | 直接使用作者镜像 | `ghcr.io/tellcts/<name>:<tag>` | 想立即使用，不维护Actions |
 | 自行同步 | `ghcr.io/<your-owner>/<name>:<tag>` | 需要独立存储、权限和更新控制 |
 
-### ⚡ 直接使用作者镜像
+### ⚡ 直接使用作者镜像 {#use-author-images}
 
 如果对应Package已经公开，可以直接拉取：
 
@@ -37,7 +37,7 @@ docker pull ghcr.io/tellcts/postgres:18.6
 > [!IMPORTANT]
 > 生产环境或需要长期稳定版本时，更推荐Fork后自行同步。自己维护GHCR Package、权限和标签，不会受作者仓库后续调整影响。
 
-### 🛠️ 自行同步
+### 🛠️ 自行同步 {#sync-yourself}
 
 Fork项目并启用Actions后，镜像会同步到你自己的账号：
 
@@ -100,7 +100,7 @@ images.yml
 
 ## 🚀 快速开始 {#quickstart}
 
-### 1️⃣ Fork或导入仓库
+### 1️⃣ Fork或导入仓库 {#fork-repository}
 
 Fork本项目，或者在GitHub上创建自己的仓库并导入这些文件。目标GHCR地址由运行时仓库的所有者决定：
 
@@ -108,7 +108,7 @@ Fork本项目，或者在GitHub上创建自己的仓库并导入这些文件。�
 ghcr.io/<owner>/<name>:<tag>
 ~~~
 
-### 2️⃣ 启用Actions
+### 2️⃣ 启用Actions {#enable-actions}
 
 进入仓库的**Actions**页面，确认`Sync Images to GHCR`工作流已经启用。
 
@@ -122,7 +122,7 @@ permissions:
 
 因为使用的是GitHub自动提供的`GITHUB_TOKEN`，不需要再创建Personal Access Token或添加额外Secret。
 
-### 3️⃣ 配置镜像
+### 3️⃣ 配置镜像 {#configure-images}
 
 编辑仓库根目录的`images.yml`。`tag`既可以写单个字符串，也可以写数组：
 
@@ -147,7 +147,7 @@ images:
 
 建议给所有标签加引号，避免`18.6`等内容被YAML解析成数字，也方便兼容不同版本解析器。
 
-### 4️⃣ 运行同步
+### 4️⃣ 运行同步 {#run-sync}
 
 工作流有三种触发方式：
 
@@ -274,31 +274,31 @@ IMAGES_FILE=/path/to/images.yml bash scripts/sync-images.sh
 
 ## ⚠️ 注意事项 {#limits}
 
-### 🖥️ 仅支持`linux/amd64`
+### 🖥️ 仅支持`linux/amd64` {#linux-amd64-only}
 
 新建和更新的标签都是单平台镜像。这能减少CI时间、网络流量和GHCR存储占用，但不适用于ARM64、Apple Silicon原生容器或其他架构。如果GHCR中已经存在旧的多架构标签，当前工作流不会自动将其改成单架构。
 
-### 📌 固定标签不会自动刷新
+### 📌 固定标签不会自动刷新 {#fixed-tags}
 
 固定标签只要在GHCR中已经存在就会被跳过。即使上游用同名标签重新发布了不同内容，本项目也不会自动覆盖。需要更新时，应先删除GHCR中的旧标签，再重新运行工作流。删除标签不可逆，操作前要确认没有服务仍依赖它。
 
-### 🔐 Package可见性
+### 🔐 Package可见性 {#package-visibility}
 
 首次同步可能创建新的GHCR Package。Package可见性通常会继承仓库或组织设置，但GitHub默认行为可能变化。同步后应检查Package是Public还是Private、是否与仓库正确关联，以及匿名拉取是否正常。
 
-### 🚦 Docker Hub限流
+### 🚦 Docker Hub限流 {#docker-hub-rate-limits}
 
 当前工作流使用匿名方式读取Docker Hub，可能受到限流、镜像暂时不可用或上游标签删除的影响。它不是实时镜像代理，也不会同步需要登录才能访问的私有Docker Hub镜像。
 
-### ⏳ 镜像不是即时更新
+### ⏳ 镜像不是即时更新 {#sync-delay}
 
 镜像只在`main`推送、每日定时或手动运行时同步。GitHub Actions可能排队，Docker Hub也可能延迟更新标签。生产环境应优先使用固定版本或digest，不要依赖`latest`。
 
-### 🗑️ 工作流不会删除镜像
+### 🗑️ 工作流不会删除镜像 {#no-image-deletion}
 
 从`images.yml`移除配置不会删除GHCR中已有的Package或标签。旧镜像需要手动清理，并且要先确认没有服务仍在使用。
 
-### ✅ 同步前测试是强制门禁
+### ✅ 同步前测试是强制门禁 {#test-gate}
 
 工作流会先运行`bash tests/sync-images.test.sh`。测试失败时，安装工具、登录GHCR和同步镜像都不会执行，避免错误逻辑覆盖现有镜像。
 
