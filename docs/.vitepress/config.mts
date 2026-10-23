@@ -3,7 +3,6 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   title: 'Tzcan Blog',
   titleTemplate: ':title - Tzcan Blog',
-  description: '开源工具实践、学习笔记、个人项目，能直接拿来用，也能回头查。',
   lang: 'zh-CN',
   srcDir: './src',
   head: [['link', { rel: 'icon', href: '/favicon.png' }]],
@@ -64,8 +63,9 @@ export default defineConfig({
 
     footer: {
       message:
-        '本站内容采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a> 许可协议。',
-      copyright: 'Copyright © 2026-present Tzcan',
+        '本站内容采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a> 许可协议',
+      copyright:
+        'Copyright © 2026-present Tzcan<br>Powered by <a href="https://vitepress.dev/" target="_blank" rel="noopener noreferrer">VitePress</a>',
     },
 
     sidebar: {

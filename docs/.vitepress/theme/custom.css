@@ -188,6 +188,22 @@ body {
   padding: 20px 24px !important;
 }
 
+.VPHero .actions a[href*='resumes-cv']::before {
+  display: inline-block;
+  margin-right: 0.45em;
+  color: rgb(255, 0, 135);
+  font-family: 'Font Awesome 7 Free';
+  font-weight: 900;
+  content: '\f004';
+  animation: fa-jello 0.9s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .VPHero .actions a[href*='resumes-cv']::before {
+    animation: none;
+  }
+}
+
 .VPNavBarMenuLink i[class*='fa-'],
 .VPFlyout i[class*='fa-'],
 .VPSidebarItem i[class*='fa-'],
