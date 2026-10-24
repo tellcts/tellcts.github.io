@@ -13,7 +13,7 @@ hero:
     alt: 书页化作雪峰的知识插画
   actions:
     - theme: brand
-      text: 打造简历
+      text: 简历模板
       link: /projects/resumes-cv
 
 features:
@@ -27,9 +27,9 @@ features:
     details: 从日常使用出发，挑选真正顺手的开源工具，写明使用场景、安装配置和常见问题，尽量做到照着就能跑通。
     link: /tools/
     linkText: 浏览工具
-  - icon: '<i class="fa-solid fa-marker" style="color: rgb(0, 184, 148);"></i>'
-    title: 笔记
-    details: 整理学习中的知识脉络、案例和思考，保留推导过程与关键细节，既方便复习，也方便以后回来查。
-    link: /notes/
-    linkText: 阅读笔记
+  - icon: '<i class="fa-solid fa-lightbulb" style="color: rgb(0, 184, 148);"></i>'
+    title: 笔者思考
+    details: 记录本人对一些问题的观察与思考，内容基本不涉及技术，也不追求给出标准答案。
+    link: /thoughts/
+    linkText: 阅读思考
 ---

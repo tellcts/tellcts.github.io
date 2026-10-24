@@ -221,19 +221,35 @@ export default defineConfig({
           ],
         },
       ],
-      '/notes/': [
+      '/thoughts/': [
         {
-          text: '软考·信息安全工程师',
-          link: '/notes/info-sec/',
+          text: '📄 AI时代，我们最需要的是什么？',
+          link: '/thoughts/what-we-need-in-ai-era',
           collapsed: false,
           items: [
             {
-              text: '安全基础知识',
-              link: '/notes/info-sec/basic',
+              text: '当答案变得容易，问题反而更珍贵',
+              link: '/thoughts/what-we-need-in-ai-era#questions-matter',
             },
             {
-              text: '案例知识总结',
-              link: '/notes/info-sec/advanced',
+              text: 'AI掌握的是已经发生过的世界',
+              link: '/thoughts/what-we-need-in-ai-era#existing-knowledge',
+            },
+            {
+              text: '创造力不是凭空造物',
+              link: '/thoughts/what-we-need-in-ai-era#creativity',
+            },
+            {
+              text: '主观能动性，决定你如何使用客观知识',
+              link: '/thoughts/what-we-need-in-ai-era#agency',
+            },
+            {
+              text: '不要把思考也外包出去',
+              link: '/thoughts/what-we-need-in-ai-era#dont-outsource-thinking',
+            },
+            {
+              text: '最后，问你一个问题',
+              link: '/thoughts/what-we-need-in-ai-era#final-question',
             },
           ],
         },
@@ -250,8 +266,8 @@ export default defineConfig({
         link: '/projects/',
       },
       {
-        text: '<i class="fa-solid fa-marker" style="color: rgb(0, 184, 148);"></i>笔记',
-        link: '/notes/',
+        text: '<i class="fa-solid fa-lightbulb" style="color: rgb(0, 184, 148);"></i>笔者思考',
+        link: '/thoughts/',
       },
       {
         text: '<i class="fa-solid fa-fire" style="color: rgb(255, 108, 60);"></i>开源工具推荐',
