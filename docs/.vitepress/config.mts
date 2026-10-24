@@ -254,6 +254,55 @@ export default defineConfig({
           ],
         },
       ],
+      '/other/': [
+        {
+          text: '📘 从0到1免费构建你的个人博客',
+          link: '/other/build-your-blog',
+          collapsed: false,
+          items: [
+            {
+              text: '教程目标',
+              link: '/other/build-your-blog#goals',
+            },
+            {
+              text: '开始前准备',
+              link: '/other/build-your-blog#preparation',
+            },
+            {
+              text: '初始化项目',
+              link: '/other/build-your-blog#initialize',
+            },
+            {
+              text: '项目总体架构',
+              link: '/other/build-your-blog#architecture',
+            },
+            {
+              text: '配置首页与导航',
+              link: '/other/build-your-blog#home-and-navigation',
+            },
+            {
+              text: '撰写文章',
+              link: '/other/build-your-blog#writing',
+            },
+            {
+              text: '本地预览与构建',
+              link: '/other/build-your-blog#preview-and-build',
+            },
+            {
+              text: '部署到GitHub Pages',
+              link: '/other/build-your-blog#github-pages',
+            },
+            {
+              text: '接入Giscus评论区',
+              link: '/other/build-your-blog#giscus-comments',
+            },
+            {
+              text: '发布前检查',
+              link: '/other/build-your-blog#publish-checklist',
+            },
+          ],
+        },
+      ],
     },
 
     nav: [
@@ -272,6 +321,15 @@ export default defineConfig({
       {
         text: '<i class="fa-solid fa-fire" style="color: rgb(255, 108, 60);"></i>开源工具推荐',
         link: '/tools/',
+      },
+      {
+        text: '<i class="fa-solid fa-ellipsis" style="color: rgb(124, 99, 255);"></i>其他',
+        items: [
+          {
+            text: '从0到1免费构建你的个人博客',
+            link: '/other/build-your-blog',
+          },
+        ],
       },
     ],
   },

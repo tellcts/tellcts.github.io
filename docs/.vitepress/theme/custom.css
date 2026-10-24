@@ -211,6 +211,30 @@ body {
   margin-right: 0.3em;
 }
 
+.vp-code-group .tabs label[data-title='pnpm']::before,
+.vp-code-group .tabs label[data-title='npm']::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.4em;
+  font-style: normal;
+  line-height: 1;
+  text-align: center;
+}
+
+.vp-code-group .tabs label[data-title='pnpm']::before {
+  color: rgb(249, 173, 0);
+  font-family: 'Font Awesome 7 Free';
+  font-weight: 900;
+  content: '\f1b3';
+}
+
+.vp-code-group .tabs label[data-title='npm']::before {
+  color: rgb(203, 56, 55);
+  font-family: 'Font Awesome 7 Brands';
+  font-weight: 400;
+  content: '\f3d4';
+}
+
 /* ---------------------------------------------------------
    13. Table first column width
    --------------------------------------------------------- */

@@ -22,14 +22,19 @@ features:
     details: 自己动手做的开源项目，讲清解决了什么问题、怎么用，以及过程中踩过的坑。
     link: /projects/
     linkText: 查看项目
-  - icon: '<i class="fa-solid fa-fire" style="color: rgb(255, 108, 60);"></i>'
-    title: 开源工具推荐
-    details: 从日常使用出发，挑选真正顺手的开源工具，写明使用场景、安装配置和常见问题，尽量做到照着就能跑通。
-    link: /tools/
-    linkText: 浏览工具
+  - icon: '<i class="fa-solid fa-book-open" style="color: rgb(124, 99, 255);"></i>'
+    title: 从0到1免费构建你的个人博客
+    details: 从安装环境、搭建VitePress项目到撰写文章，再通过GitHub Pages自动部署，完整走通一套零服务器成本的个人博客方案。
+    link: /other/build-your-blog
+    linkText: 开始搭建
   - icon: '<i class="fa-solid fa-lightbulb" style="color: rgb(0, 184, 148);"></i>'
     title: 笔者思考
     details: 记录本人对一些问题的观察与思考，内容基本不涉及技术，也不追求给出标准答案。
     link: /thoughts/
     linkText: 阅读思考
+  - icon: '<i class="fa-solid fa-fire" style="color: rgb(255, 108, 60);"></i>'
+    title: 开源工具推荐
+    details: 从日常使用出发，挑选真正顺手的开源工具，写明使用场景、安装配置和常见问题，尽量做到照着就能跑通。
+    link: /tools/
+    linkText: 浏览工具
 ---
